@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YZ - Front-end Web Developer</title>
+    <link rel="icon" href="assets/images/logoYZ.png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/fonts/font-awesome/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/fonts/font-awesome/fa-brands.css">
+    <link rel="stylesheet" href="assets/css/fonts/font-awesome/fa-regular.css">
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/angular-1.2.32/angular.js"></script>
+    <script src="assets/js/angular-1.2.32/angular-route.js"></script>
+    <!-- <script src="assets/js/bootstrap/bootstrap.js"></script> -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/MainController.js"></script>
+    
+</head>
+
+<body>
+   <div id="nav_bar" class="" ng-hide="hideNav">
+        <div class="navLogo col-lg-12 col-md-1 col-sm-1 col-xs-1">
+            <a href="#" class="">
+                <img class="devName" src="assets/images/logoYZ.png" alt="Web Developer Name" class="animation-logo img-responsive">
+            </a>
+        </div>
+        <nav id="navigation" class="col-lg-12 col-md-6 col-sm-6 col-xs-3" ng-controller="MainController as vm">
+            <a rel="index" href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i class="fas fa-home"></i></a>
+            <!-- ng-hide="hideIconHome" -->
+            <!-- <span id="spanHOME" class="spanHOME" ng-hide="hideNavHome">HOME</span> -->
+            <a rel="about"   href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i class="fas fa-user"></i></a>
+            <a rel="slills"  href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i class="fas fa-cog"></i></a>
+            <a rel="gallery" href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i class="fas fa-eye"></i></a>
+            <a rel="contact" href="#" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><i class="fas fa-envelope"></i></a>
+        </nav>
+
+        <ul class="social col-lg-12 col-md-3 col-sm-3 col-xs-3">
+            <li>
+                <a rel="contact" target="_blank" href="https://www.facebook.com/yassoor.zaky?ref=bookmarks" class="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a rel="contact" target="_blank" href="https://www.linkedin.com/in/yasser-zaky-1a159171" class="">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li>
+                <a rel="contact" target="_blank" href="https://www.instagram.com/yasserzky/" class="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+
+        <a id="mobile-link" href="">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+    <div ng-view></div>
+
+
+</body>
+
+</html>
+
